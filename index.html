@@ -29,6 +29,18 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -47,10 +59,17 @@
         <div class="container">
             <h1>Bienvenido</h1>
             <p>Esta es una página web básica con HTML y CSS.</p>
+            <button onclick="mostrarMensaje()">Haz clic aquí</button>
         </div>
     </main>
     <footer>
         &copy; 2025 Mi Página
     </footer>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Gracias por visitar nuestra página!");
+        }
+    </script>
 </body>
 </html>
